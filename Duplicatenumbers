@@ -1,0 +1,37 @@
+arr=[1,2,2,3,3,6,6,1,7]
+
+function duplicatenumber(arr){
+    var temp=[]
+    var max=0;
+
+    var dup=[]
+
+    for(var i=0;i<arr.length;i++){
+
+        if(max<arr[i]){
+            max=arr[i];
+        }
+        
+    }
+
+    for(var i=0;i<=max;i++){
+        temp[i]=0;
+    }
+
+    for(var i=0;i<arr.length;i++){
+        temp[arr[i]]=temp[arr[i]]+1;
+    }
+
+    for(var i=0;i<=max;i++){
+        if(temp[i]>1)
+            dup.push(i)
+    }
+
+    return dup;
+}
+
+var dup= duplicatenumber(arr);
+
+for(var i=0;i<dup.length;i++){
+    console.log(dup[i])
+}
