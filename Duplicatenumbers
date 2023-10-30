@@ -1,4 +1,4 @@
-arr=[1,2,2,3,3,6,6,1,7]
+var arr=[1,2,2,3,3,6,6,1,7]
 
 function duplicatenumber(arr){
     var temp=[]
